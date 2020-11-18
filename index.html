@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="assets/bootstrap-4.css">
 	<link rel="stylesheet" href="assets/travel-styles.css">
 	<link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://maps.googleapis.com/maps/api/js">
 
 	<title>Welcome</title>
 </head>
@@ -42,7 +43,7 @@
 					<div class="feature-box">
 						<div class="feature-img">
 							<img src="assets/images/israel.jpg" alt="Bahai Garden Haifa">
-							<div class="price"><p>79$</p></div>
+							<div class="price"><p>£790</p></div>
 							<div class="rating">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -54,7 +55,9 @@
 
 						<div class="feature-details">
 							<h4>Israel Haifa</h4>
-							<p>Haifa This Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Esse, cum!</p>
+							<p>Israel has a tremendous history and legacy, architecturally speaking, much of which dates back to the architecture
+                             in Jerusalem which evolved over three millennia, formed by inspirations from the 
+                            best Persian, Roman, Ottoman Turkish architecture, with a bit of colonial German architecture thrown in the mix”</p>
 						</div>
 						<div class="place-icons">
 							<span><i class="fas fa-map-marker-alt"></i>Israel Haifa.</span>
@@ -68,7 +71,7 @@
 					<div class="feature-box">
 						<div class="feature-img">
 							<img src="assets/images/london.jpg" alt="London Graet Britan">
-							<div class="price"><p>99$</p></div>
+							<div class="price"><p>£990</p></div>
 							<div class="rating">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -80,7 +83,10 @@
 
 						<div class="feature-details">
 							<h4>London Great Britan.</h4>
-							<p>London This Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Esse, cum!</p>
+							<p>London has something for everyone: from history and culture to fine food and exceedingly good times. ...
+                             With such diversity, London's cultural dynamism makes it among the world's most international cities. 
+                            It is a city of ideas – an innovator of art and culture.
+                            </p>
 						</div>
 						<div class="place-icons">
 							<span><i class="fas fa-map-marker-alt"></i>London Castle.</span>
@@ -94,7 +100,7 @@
 					<div class="feature-box">
 						<div class="feature-img">
 							<img src="assets/images/mumbai.jpg" alt="Mumbai China">
-							<div class="price"><p>69$</p></div>
+							<div class="price"><p>£690</p></div>
 							<div class="rating">
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
@@ -105,11 +111,16 @@
 						</div>
 
 						<div class="feature-details">
-							<h4>Mumbai China.</h4>
-							<p>Mumbai This Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Esse, cum!</p>
+							<h4>Chengdu China.</h4>
+							<p>If you love pandas, then southern city in China is for you. 
+
+                                    The home of this lovable endangered animal, Chengdu is also where you can indulge in some of the best cuisine China has to offe
+                                    r. Sichuan cuisine uses garlic and chilli peppers as well as 
+                                    the famous Sichuan pepper that adds the signature spice that food from this area is known for. 
+                                    </p>
 						</div>
 						<div class="place-icons">
-							<span><i class="fas fa-map-marker-alt"></i>Mumbai China.</span>
+							<span><i class="fas fa-map-marker-alt"></i>Chengdu China.</span>
 							<span><i class="fas fa-sun"></i>4 Days.</span>
 							<span><i class="fas fa-moon"></i>3 Nights.</span>
 						</div>
@@ -122,7 +133,7 @@
 	<!-- gallery section  -->
 
 	<section class="gallery">
-		<h1>Traveling Gallery</h1>
+		<h1>Travelling Gallery</h1>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -157,6 +168,23 @@
 		</div>
 	</section>
 
+    <section class="googlemaps">
+        <h1>Find out the best places to visit </h1>
+            <div id='hollidaymap'></div>
+                <script> 
+                    function initMap() {
+                        var location = {lat: 51.507351,lng: -0.127758};
+                        var map = new google.maps.Map(document.getElementsById(hollidaymap), {
+                         zoom: 4,
+                         center:location   
+                        });
+                    }
+                </script>
+        
+                
+                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    </section>
+
 	<!-- banner discount actions section -->
 
 	<section class="banner">
@@ -184,7 +212,7 @@
 				<!-- user 1 -->
 				<div class="col-md-4">
 					<div class="user-review">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, odit?</p>
+						<p>"It was such an amazing trip as the sun set my partner proposed to me "</p>
 						<h5>Amir Brama</h5>
 						<small>Israel Haifa</small>
 					</div>
@@ -193,18 +221,18 @@
 				<!-- user 2 -->
 				<div class="col-md-4">
 					<div class="user-review">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, odit?</p>
+						<p>"When i saw how easy it was to book a trip to china i just had to do it. "</p>
 						<h5>Folly Brama</h5>
-						<small>China Mumbai</small>
+						<small>China Chengdu</small>
 					</div>
 					<img src="assets/images/user-2.jpg" alt="Amirka">
 				</div>
 				<!-- user 3 -->
 				<div class="col-md-4">
 					<div class="user-review">
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, odit?</p>
+						<p>"I had such a great time and it was all made so easy"</p>
 						<h5>Vaso Brama</h5>
-						<small>London Tauer</small>
+						<small>London Uk</small>
 					</div>
 					<img src="assets/images/user-3.jpg" alt="Amirka">
 				</div>
@@ -218,8 +246,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
-					<img src="assets/images/logo-btn.png" alt="" class="footer-logo">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, velit at maiores iure excepturi dolores quasi temporibus vel earum pariatur sed, similique unde, accusamus architecto.</p>
+					<img src="assets/images/logo-new.jpg" alt="" class="footer-logo">
+					<p>Here at happy hollidays we want to make sure that you have the best holliday available to you everything is tailored to make this the best experience you can imagine.</p>
 				</div>
 				<div class="col-md-3">
 					<h4>Features</h4>
