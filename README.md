@@ -1,13 +1,23 @@
-# Happy Hollidays
+# Happy Holidays
 
-![BattleReadyHomepage](ReadmeFiles//Homepage.jpg)
+![HappyHolidaysHomePage]()
 
 
-Link to the deployed website [Happy Hollidays](https://orihillairetdev.github.io/Milestone-project-2/)
+Link to the deployed website [Happy Holidays](https://orihillairetdev.github.io/Milestone-project-2/)
 
 ## 1. UX
 
 #### 1.1. Project Goals
+
+THe goal of this website is to provide the user with a way to search for places that they want to go on holiday 
+and to also be able to look at the sourrounding area so they can see attractions hotels and resturaunts 
+
+there is a gallery for each of the popular destinations so that the user can see the place they are thinking of visiting 
+
+Ther user can creat an account to log in and get notified about latest deals and the newest best holiday spots
+if the user does not have an account they can be directed to creat one 
+
+
 
 
 
@@ -17,11 +27,7 @@ Link to the deployed website [Happy Hollidays](https://orihillairetdev.github.io
   
  #### 1.3 Wireframe
 
-[Home](battle-ready-minis/Readme/Wireframes/Home/) 
 
-[Gallery](battle-ready-minis/Readme/Wireframes/Gallery/) 
-
-[Contact](battle-ready-minis/Readme/Wireframes/Contact/) 
 
 ## 2. Features
 
@@ -34,10 +40,18 @@ Link to the deployed website [Happy Hollidays](https://orihillairetdev.github.io
 
 
 
-**Contact**
+**Login/Create account**
 
 
+**Holliday Page**
 
+The holiday page is called upon when the user searches/clicks on one of the holiday options it changes the current page to
+a break down of the location with a Google Map of the location so they can decide if they place they are looking at is the right one for them
+
+-Google maps
+-breakdown of location
+-social media links
+-contact details 
 
 
 ####  2.2. Features left to implement in the future
