@@ -1,276 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/jpeg" sizes="60x60" href="assets/images/favicon.ico">
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/bootstrap-4.css">
-	<link rel="stylesheet" href="assets/travel-styles.css">
-	<link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="https://maps.googleapis.com/maps/api/js">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="hBa-Ap-E36-a4NMQnlqopeFL3TNZ7k63RopZRbv6wq0" />
 
-	<title>Welcome</title>
+	<!--Bootstrap & CSS stylesheet links-->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+ 
+    <title>South Africa get aways</title>
 </head>
-<body>
-   <!--Found a lovely tutorial that i used on youtube https://youtu.be/AiaEqc9UMf8?list=PLGh6gGByzAmbxu4ZHZQgzimcJxHZ3kjqu -->
-	<!-- header section -->
+<body class="background">
+    <h1>South Africa</h1>
 
-	<section class="header">
-		<div class="container">
-			<img src="assets/images/logo-new.jpg">
-			<button class="login-btn">Login</button>
-			<h1>Find Your Perfect Holliday</h1>
-			<p>See the wonders of the world</p>
+    <p>Welcome to South Africa an amazing country with tons to do and amazing sights to see.</p>
 
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search Country or City">
+    <section class="container-fluid">
+		<section class="row">
 
-				<div class="input-group-append">
-					<button class="input-group-text btn">Search</button>
-				</div>
-			</div>
-		</div>
-	</section>
+			<!--SEARCH FILTERS-->
 
-	<!-- features section -->
-
-	<section class="features">
-		<h1>Featured Destinations</h1>
-		<div class="container">
-			<div class="row">
-				<!-- container 1 -->
-				<div class="col-md-4">
-					<div class="feature-box">
-						<div class="feature-img">
-							<img src="assets/images/israel.jpg" alt="Bahai Garden Haifa">
-							<div class="price"><p>£790</p></div>
-							<div class="rating">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-
-						<div class="feature-details">
-							<h4>Israel Haifa</h4>
-							<p>Israel has a tremendous history and legacy, architecturally speaking, much of which dates back to the architecture
-                             in Jerusalem which evolved over three millennia, formed by inspirations from the 
-                            best Persian, Roman, Ottoman Turkish architecture, with a bit of colonial German architecture thrown in the mix”</p>
-						</div>
-						<div class="place-icons">
-							<span><i class="fas fa-map-marker-alt"></i>Israel Haifa.</span>
-							<span><i class="fas fa-sun"></i>4 Days.</span>
-							<span><i class="fas fa-moon"></i>3 Nights.</span>
-						</div>
-					</div>
-				</div>
-				<!--  container 2 -->
-				<div class="col-md-4">
-					<div class="feature-box">
-						<div class="feature-img">
-							<img src="assets/images/london.jpg" alt="London Graet Britan">
-							<div class="price"><p>£990</p></div>
-							<div class="rating">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-
-						<div class="feature-details">
-							<h4>London Great Britan.</h4>
-							<p>London has something for everyone: from history and culture to fine food and exceedingly good times. ...
-                             With such diversity, London's cultural dynamism makes it among the world's most international cities. 
-                            It is a city of ideas – an innovator of art and culture.
-                            </p>
-						</div>
-						<div class="place-icons">
-							<span><i class="fas fa-map-marker-alt"></i>London Castle.</span>
-							<span><i class="fas fa-sun"></i>4 Days.</span>
-							<span><i class="fas fa-moon"></i>3 Nights.</span>
-						</div>
-					</div>
-				</div>
-				<!-- container 3 -->
-				<div class="col-md-4">
-					<div class="feature-box">
-						<div class="feature-img">
-							<img src="assets/images/mumbai.jpg" alt="Mumbai China">
-							<div class="price"><p>£690</p></div>
-							<div class="rating">
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
-								<i class="fa fa-star"></i>
-							</div>
-						</div>
-
-						<div class="feature-details">
-							<h4>Chengdu China.</h4>
-							<p>If you love pandas, then southern city in China is for you. 
-
-                                    The home of this lovable endangered animal, Chengdu is also where you can indulge in some of the best cuisine China has to offe
-                                    r. Sichuan cuisine uses garlic and chilli peppers as well as 
-                                    the famous Sichuan pepper that adds the signature spice that food from this area is known for. 
-                                    </p>
-						</div>
-						<div class="place-icons">
-							<span><i class="fas fa-map-marker-alt"></i>Chengdu China.</span>
-							<span><i class="fas fa-sun"></i>4 Days.</span>
-							<span><i class="fas fa-moon"></i>3 Nights.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- gallery section  -->
-
-	<section class="gallery">
-		<h1>Travelling Gallery</h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<div class="gallery-box">
-						<img src="assets/images/israel.jpg" alt="Israel Haifa">
-						<h4>Israel Haifa</h4>
-                        <button class="btn" location.href="gallary1.html"></button>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="gallery-box">
-						<img src="assets/images/london.jpg" alt="London">
-						<h4>London</h4>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="gallery-box">
-						<img src="assets/images/usa.jpg" alt="New York">
-						<h4>New York</h4>
-					</div>
-				</div>
-
-				<div class="col-md-3">
-					<div class="gallery-box">
-						<img src="assets/images/mumbai.jpg" alt="Mumbai">
-						<h4>Mumbai</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <section class="googlemaps">
-        <h1>Find out the best places to visit </h1>
-            <div id='hollidaymap'></div>
-                <script> 
-                    function initMap() {
-                        var location = {lat: 51.507351,lng: -0.127758};
-                        var map = new google.maps.Map(document.getElementsById(hollidaymap), {
-                         zoom: 4,
-                         center:location   
-                        });
-                    }
-                </script>
-        
-                
-                    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    </section>
-
-	<!-- banner discount actions section -->
-
-	<section class="banner">
-
-		<div class="banner-highlights">
-			<div class="container">
+			<div class="col-12 col-lg-3">
+				<h3 class="section-heading">Search 
+                <br>South Africa</h3>
 				<div class="row">
-					<div class="col-md-8">
-						<h2>Get 30% on top destination</h2>
-						<p>Your first TRIP is eligible for the discount</p>
+					<div class="col-12 col-md-6 col-lg-12">
+						<h4 class="lead lead-large">Where are you travelling to?</h4>
+						<div class="location-option" id="locationField">
+							<input id="autocomplete" placeholder="Enter a town or city" type="text" />
+                        </div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-12">
+							<h4 class="lead" id="looking-for">What are you looking for?</h4>
+							<div id="controls">
+								<select class="select-option" id="category">
+                                <option value="" selected>Click to select</option>
+                                <option id="accommodation" value="accommodation">Hotels</option>
+                                <option id="camping" value="accommodation">Camping</option>
+                                <option id="attraction" value="attraction">Tourist Attraction</option>
+                                <option id="park" value="attraction">Parks</option>
+                                <option id="stadium" value="attraction">Sports Stadium</option>
+                                <option id="food" value="attraction">Restaurants & Cafes</option>
+                                <option id="drink" value="attraction">Bars</option>
+                                <option id="club" value="attraction">Clubs</option>
+                                <option id="shopping" value="attraction">Shopping</option>
+                            </select>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<button type="button" class="booking-btn">Book Now</button>
+					<h6><button id="reset-button" type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+					</h6>
+				</div>
+
+				<!--MAP-->
+                
+				<div class="col-12 col-lg-9">
+					<div id="map"></div>
+
+					<!--INFO BOX FOR SEARCH RESULTS ON MAP-->
+
+					<div class="info-box">
+						<div id="info-content">
+							<table>
+								<tr id="iw-url-row" class="iw_table_row">
+									<td id="iw-icon" class="iw_table_icon"></td>
+									<td id="iw-url"></td>
+								</tr>
+								<tr id="iw-address-row" class="iw_table_row">
+									<td class="iw_attribute_name">Address:</td>
+									<td id="iw-address"></td>
+								</tr>
+								<tr id="iw-phone-row" class="iw_table_row">
+									<td class="iw_attribute_name">Telephone:</td>
+									<td id="iw-phone"></td>
+								</tr>
+								<tr id="iw-rating-row" class="iw_table_row">
+									<td class="iw_attribute_name">Rating:</td>
+									<td id="iw-rating"></td>
+								</tr>
+								<tr id="iw-website-row" class="iw_table_row">
+									<td class="iw_attribute_name">Website:</td>
+									<td id="iw-website"></td>
+								</tr>
+							</table>
+						</div>
 					</div>
+				</div>
+        </section>
+        
+        <section class="row">
+			<hr class="hr2" id="hr">
+			<div class="col-12">
+				<h3 id="results-heading" class="header"></h3>
+				<div id="listing">
+					<table id="resultsTable">
+						<tbody id="results"></tbody>
+					</table>
 				</div>
 			</div>
-		</div>
-	</section>
-	
-	<!-- section user feedbacks  -->
+		</section>
 
-	<section class="users-feedback">
-		<div class="container">
-			<div class="row">
-				<!-- user 1 -->
-				<div class="col-md-4">
-					<div class="user-review">
-						<p>"It was such an amazing trip as the sun set my partner proposed to me "</p>
-						<h5>Amir Brama</h5>
-						<small>Israel Haifa</small>
-					</div>
-					<img src="assets/images/user-1.jpg" alt="Amirka">
-				</div>
-				<!-- user 2 -->
-				<div class="col-md-4">
-					<div class="user-review">
-						<p>"When i saw how easy it was to book a trip to china i just had to do it. "</p>
-						<h5>Folly Brama</h5>
-						<small>China Chengdu</small>
-					</div>
-					<img src="assets/images/user-2.jpg" alt="Amirka">
-				</div>
-				<!-- user 3 -->
-				<div class="col-md-4">
-					<div class="user-review">
-						<p>"I had such a great time and it was all made so easy"</p>
-						<h5>Vaso Brama</h5>
-						<small>London Uk</small>
-					</div>
-					<img src="assets/images/user-3.jpg" alt="Amirka">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--  footer section  -->
-
-	<section class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<img src="assets/images/logo-new.jpg" alt="" class="footer-logo">
-					<p>Here at happy hollidays we want to make sure that you have the best holliday available to you everything is tailored to make this the best experience you can imagine.</p>
-				</div>
-				<div class="col-md-3">
-					<h4>Features</h4>
-					<p>Deals & Offers</p>
-					<p>Customer Reviews</p>
-					<p>Cancelatio Policy</p>
-				</div>
-				<div class="col-md-3">
-					<h4>Quick Contact</h4>
-					<p><i class="fas fa-phone-alt"></i> 111122220004</p>
-					<p><i class="fas fa-envelope"></i> HapphyHollidays@gmail.com</p>
-					<p><i class="fas fa-home"></i> Happy street 31</p>
-				</div>
-				<div class="col-md-3">
-					<h4>Follow Us on</h4>
-					<p><i class="fab fa-facebook"></i> Facebook</p>
-					<p><i class="fab fa-youtube"></i> YouTube</p>
-					<p><i class="fab fa-twitter"></i> Twitter</p>
-				</div>	
-			</div>
-			<hr>
-			<p class="copyright">Made with<i class="fas fa-heart"></i>your ideal holliday in mind</p>
-		</div>
 	</section>
 </body>
 </html>
