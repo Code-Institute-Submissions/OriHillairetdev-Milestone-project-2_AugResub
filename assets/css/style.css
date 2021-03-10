@@ -1,5 +1,6 @@
 .background {
- background-color:white;
+ background-image: url(assets/images/background.jpg);
+ width: fit-content;
 }
 
 #map {
