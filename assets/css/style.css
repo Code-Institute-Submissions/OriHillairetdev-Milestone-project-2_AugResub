@@ -1,6 +1,9 @@
 .background {
- background-image: url(assets/images/background.jpg);
- width: fit-content;
+ background-image: url(../images/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #map {
@@ -13,3 +16,33 @@
     -moz-border-radius: 10px;
     border-radius: 10px;
 }
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Style each tab content individually */
+#Home {background-color:red;}
+#Gallery {background-color:green;}
+#Buisness {background-color:blue;}
