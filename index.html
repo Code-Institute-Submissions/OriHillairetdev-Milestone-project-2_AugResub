@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="hBa-Ap-E36-a4NMQnlqopeFL3TNZ7k63RopZRbv6wq0" />
-
+    <script type = "text/javascript" src = "assets/javascript/tabs.js"></script>
 	<!--Bootstrap & CSS stylesheet links-->
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
-	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
  
     <title>Happy Hollidays</title>
 </head>
@@ -19,28 +20,30 @@
     <h1>South Africa</h1>
 
     <p>Welcome to South Africa an amazing country with tons to do and amazing sights to see.</p>
-<section>
-    <div id="Home" class="tabcontent">
-  <h1>Home</h1>
-  <p>Home page</p>
-</div>
+    <section>
+                    <!-- Tab links -->
+            <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
+            <button class="tablinks" onclick="openCity(event, 'Buisness')">Buisness</button>
+            </div>
 
-<div id="Gallery" class="tabcontent">
-  <h1>Gallery</h1>
-  <p>See some stunning views</p>
-</div>
+            <!-- Tab content -->
+            <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            
+            </div>
 
-<div id="Buisness" class="tabcontent">
-  <h1>Buisness</h1>
-  <p>Where we talk about buisness</p>
-</div>
+            <div id="Gallery" class="tabcontent">
+            <h3>Gallery</h3>
+            
+            </div>
 
-<button class="tablink" onclick="" id="defaultOpen">Home</button>
-<button class="tablink" onclick="">Gallery</button>
-<button class="tablink" onclick="">Buisness</button>
-
-
-</section>
+            <div id="Buisness" class="tabcontent">
+            <h3>Buisness</h3>
+            
+            </div>
+    </section>
     <section class="container-fluid">
 		<section class="row">
 
