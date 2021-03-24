@@ -10,8 +10,8 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
 
 
 var countries = {
-    'uk': {                     //For centering the map as opposed to searching.
-        center: { lat: 62.8, lng: 2.6 },
+    'southafrica': {                     //For centering the map as opposed to searching.
+        center: { lat:  -30.10, lng: 24.7 },
         zoom: 4
     }
 };
@@ -25,15 +25,15 @@ function reset() {
     $("#autocomplete").val("");
     $('#results-heading').html("");
     $('#hr').hide();
-    map.setZoom(countries.uk.zoom);
-    map.setCenter(countries.uk.center);
+    map.setZoom(countries.southafrica.zoom);
+    map.setCenter(countries.southafrica.center);
     place = "";
 }
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { 
-        zoom: countries.uk.zoom,
-        center: countries.uk.center,
+        zoom: countries.southafrica.zoom,
+        center: countries.southafrica.center,
         mapTypeControl: false,
         panControl: false,
         streetViewControl: false,
@@ -132,7 +132,7 @@ function initMap() {
         (
             document.getElementById('autocomplete')), {
         types: ['(cities)'],
-        componentRestrictions: { country: ['dk', 'fi', 'is', 'no', 'se'] }
+        componentRestrictions: { country: ['za'] }
     });
     places = new google.maps.places.PlacesService(map);
 
