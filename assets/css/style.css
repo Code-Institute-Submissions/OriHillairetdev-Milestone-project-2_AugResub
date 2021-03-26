@@ -251,41 +251,11 @@ table {
 }
 
 #results-heading {
-    color: #FAED26;
+    color: rgb(255, 255, 255);
 }
 
-/*-----------------------CONTACT */
 
-.fa-envelope {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-}
 
-/*-----------------------TESTIMONIALS */
-
-.testimonial-container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.label {
-    color: #FFFFFF;
-}
-
-.reviewer-image {
-    border: 25px solid transparent;
-    margin-bottom: 30px;
-    width: 100%;
-    height: auto;
-}
-
-.testimonial-hover:hover {
-    background-color: #FAED26;
-    transition: background-color 0.8s ease-in-out;
-    -moz-transition: background-color 0.8s ease-in-out;
-    -webkit-transition: background-color 0.8s ease-in-out;
-    -o-transition: background-color 0.8s ease-in-out;
-}
 
 /*-----------------------FOOTER */
 
@@ -324,3 +294,10 @@ footer {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
 } 
+
+.iw_table_row {
+    font-size: 0.6rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: #09191D;
+}
+

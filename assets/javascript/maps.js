@@ -10,8 +10,8 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
 
 
 var countries = {
-    'southafrica': {                     //For centering the map as opposed to searching.
-        center: { lat:  -30.10, lng: 24.7 },
+    'uk': {                     //For centering the map as opposed to searching.
+        center: { lat: 62.8, lng: 2.6 },
         zoom: 4
     }
 };
@@ -25,15 +25,15 @@ function reset() {
     $("#autocomplete").val("");
     $('#results-heading').html("");
     $('#hr').hide();
-    map.setZoom(countries.southafrica.zoom);
-    map.setCenter(countries.southafrica.center);
+    map.setZoom(countries.uk.zoom);
+    map.setCenter(countries.uk.center);
     place = "";
 }
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { 
-        zoom: countries.southafrica.zoom,
-        center: countries.southafrica.center,
+        zoom: countries.uk.zoom,
+        center: countries.uk.center,
         mapTypeControl: false,
         panControl: false,
         streetViewControl: false,
