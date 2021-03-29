@@ -10,9 +10,9 @@ var hostnameRegexp = new RegExp('^https?://.+?/');
 
 
 var countries = {
-    'uk': {                     //For centering the map as opposed to searching.
-        center: { lat: 62.8, lng: 2.6 },
-        zoom: 4
+    'za': {                     //For centering the map as opposed to searching.
+        center: { lat: -30.4, lng:  24.6 },
+        zoom: 6
     }
 };
 
@@ -32,8 +32,8 @@ function reset() {
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { 
-        zoom: countries.uk.zoom,
-        center: countries.uk.center,
+        zoom: countries.za.zoom,
+        center: countries.za.center,
         mapTypeControl: false,
         panControl: false,
         streetViewControl: false,
