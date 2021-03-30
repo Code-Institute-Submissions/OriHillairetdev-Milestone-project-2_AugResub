@@ -5,8 +5,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="google-site-verification" content="AIzaSyCpHF2o9d25iUs5-o2HdnEd5SIEFHYlmfI" />
+      
       <script type = "text/javascript" src = "assets/javascript/tabs.js"></script>
       <script type = "text/javascript" src = "assets/javascript/gallery.js"></script>
+
+      <!--JQuery, Popper.js & Bootstrap JS-->
+
+	  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="assets/javascript/menu.js"></script>
+
+      <!--Google Maps API-->
+
+	  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpHF2o9d25iUs5-o2HdnEd5SIEFHYlmfI&libraries=places&callback=initMap" async defer></script>    
+	  <script src="assets/javascript/maps.js"></script>
+
+
       <!--Bootstrap & CSS stylesheet links-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
@@ -20,14 +36,15 @@
       <section>
          <!-- Tab links -->
          <div class="tab">
-            <button class="tablinks active" onclick="openCity(event, 'Home')">Home</button>
-            <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
-            <button class="tablinks" onclick="openCity(event, 'Buisness')">Buisness</button>
+            <button class="tablinks active" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
+            <button class="tablinks" onclick="openTab(event, 'Buisness')">Buisness</button>
          </div>
          <!-- Tab content -->
-         <div id="Home" class="tabcontent">
-         <h3></h3>
-         <section class="container-fluid">
+
+         <section>
+         <div id="Home" class="tabcontent" >
+                  <section class="container-fluid">
            	<section class="container-fluid">
 		<section class="row">
 
@@ -114,11 +131,14 @@
 					</table>
 				</div>
 			</div>
-		</section>
+		    </section>
 
+        </section>
     </section>
-    
-     <div id="Gallery" class="tabcontent">
+
+    <section>
+     <div id="Gallery" class="tabcontent" >
+         
                     <!-- Slideshow container -->
                     <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
@@ -149,6 +169,10 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
          </div>
+
+    </section>  
+    
+    <section>
          <div id="Buisness" class="tabcontent">
             <h3>Buisness</h3>
             <p>Want your buisness added or removed contact us here at 
@@ -157,8 +181,8 @@
 
                 contact us during our business times 
             </p>
-      
-
+    </section>
+    </body>
 	<!--FOOTER-->
 	<!--Taken from tutorial project from Code Institue lessons-->
 
@@ -166,10 +190,7 @@
 		<div class="footer-section row" id="footer-info">
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header">About Us</h5>
-				<p class="inline-block footer-text">At Nordic Discovery we aim to make visiting our part of the world as
-					simple as possible! Simply choose where you'd like to go and then what kind of place you are looking 
-                    for. Click the markers for further info. If the Map doesn't load please reload page.
-                    The menu is found by clicking the Nordic Discovery header.</p>
+				<p class="inline-block footer-text">.</p>
 			</div>
 			<div class="col-md-6">
 				<h5 class="uppercase footer-header" id="social-media">Follow us on Social Media</h5>
@@ -202,21 +223,7 @@
 			</div>
 		</div>
 	</footer>
-
-	<!--JQuery, Popper.js & Bootstrap JS-->
-
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/javascript/menu.js"></script>
-
-	<!--Google Maps API-->
-
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpHF2o9d25iUs5-o2HdnEd5SIEFHYlmfI&libraries=places&callback=initMap" async defer></script>    
-	<script src="assets/javascript/maps.js"></script>
-
-        
       
-   </body>
+      
+   
 </html>
