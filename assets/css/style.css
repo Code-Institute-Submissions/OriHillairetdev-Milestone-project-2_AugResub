@@ -85,6 +85,14 @@ border-top: none;
   margin: auto;
 }
 
+.mySlides {
+
+
+    display:none;
+}
+
+#slide1 {display:block}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -159,6 +167,7 @@ border-top: none;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
@@ -180,7 +189,7 @@ border-top: none;
 }
 
 .info-box {
-    display: none;
+    display: block;
 }
 
 #category, #autocomplete {
