@@ -1,114 +1,271 @@
-# Happy Holidays
+# Happy Hollidays - Project Two: Interactive Frontend Development
 
-![HappyHolidaysHomePage]()
+![Screenshot](https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/Multi_Device_Website_Mockupr.png?raw=true)
 
+A live demo can be found [here](https://jsudron.github.io/Nordic-Discovery-Project/).
 
-Link to the deployed website [Happy Holidays](https://orihillairetdev.github.io/Milestone-project-2/)
+## Introduction - Project Purpose
 
-## 1. UX
-
-#### 1.1. Project Goals
-
-THe goal of this website is to provide the user with a way to search for places that they want to go on holiday 
-and to also be able to look at the sourrounding area so they can see attractions hotels and resturaunts 
-
-there is a gallery for each of the popular destinations so that the user can see the place they are thinking of visiting 
-
-Ther user can creat an account to log in and get notified about latest deals and the newest best holiday spots
-if the user does not have an account they can be directed to creat one 
-
-
-
-
-
-#### 1.2. User Stories
-
-
-  
- #### 1.3 Wireframe
-
-
-
-## 2. Features
-
-#### 2.1. Existing features
-
-**Home**
-
-
-**Gallery**
-
-
-
-**Login/Create account**
-
-
-**Holliday Page**
-
-The holiday page is called upon when the user searches/clicks on one of the holiday options it changes the current page to
-a break down of the location with a Google Map of the location so they can decide if they place they are looking at is the right one for them
-
--Google maps
--breakdown of location
--social media links
--contact details 
-
-
-####  2.2. Features left to implement in the future
-
-
-
-## 3. Technologies used
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5) - provides the content and structure for my website.
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - provides the styling.
-- [Bootstrap](https://getbootstrap.com/) - used to create the layout of the project.
-- [Figma](https://www.figma.com/) - used to create the project's wireframes.
-- [Gitpod](https://gitpod.io/) - used to develop the website.
-- [GitHub](https://github.com/) - used to host the project.
-- [Google Fonts](https://fonts.google.com/) - used to provide the fonts.
-- [Font Awesome](https://fontawesome.com/) - used the font awesome icons to style the information and the links in the footer.
-
-
-
-
-## 4. Testing
-
-The testing process can be seen [here](TESTING.md).
-
-## 5. Deployment
-
-**To deploy the project**
-
-This project is hosted in GitHub Pages
-
-1. On the menu on the top of the project’s repository on GitHub select Settings.
-2. Scroll down to the GitHub Pages section.
-3. Inside that section, click on the drop-down menu under Source and select Master Branch.
-3. The page refreshes automatically and the website is now deployed.
-4. The link to the webpage is just in the GitHub Pages section down below.
-
-Only one branch has been used for this project.
-
-**To run the project locally**
-
-To clone this project from GitHub:
-
-1. Under the repository’s name, click Clone or download.
-2. In the Clone with HTTPs section, copy the given URL.
-3. In your IDE of choice, open Git Bash.
-4. Change the current working directory to the location where you want the cloned directory to be made.
-5. Type git clone, and then paste the URL copied from GitHub.
-6. Press enter and the local clone will be created.
-
-## 6. Credits
-
-#### 6.1. Content
-
-
-
-####  6.2. Media
-
+For project two i chose the travel website project where i was tasked with creating a project that utilised Google maps i settled on a site
+that would allow users to find locations throughout towns and citys in South Africa while also being able to view images taken from major holliday locations
+in the country.
+## UX
  
+### Goals
 
-####  6.3. Acknowledgments
+To allow the user to find locations for thier holliday in South Africa.
+
+#### Target Audience
+
+- Users whom speak English as currently this is the only language catered for.
+- Holidaymakers of all ages looking for potential holiday destinations.
+- Holidaymakers whom have already have a holiday booked to Scandinavia or Iceland.
+- Students between 18 & 28 looking for somewhere to go on a gap year.
+
+#### Customer Goals
+
+- Have a fully proficient & intuitive website.
+- Reach a variety of new customers.
+- Gain advertising/sponsorship from accomodation/attractions found on the site.
+
+### User Stories
+
+#### As a Travel Company I want to...
+
+- Have an attractive & fast website which will keep users engaged.
+- Provide a pleasant user experience so users continue to visit the site.
+- Enable users to easily find a variety of accomodation/attractions within their desired location.
+- Help to increase turnover at attractions so they'll actively advertise Nordic Discovery, e.g. via their own website.
+- At some point in the future drive further revenue via sponsorship & advertising from searched locations & accomodation/attractions.
+- Allow site visitors to contact me should they have any enquiries.
+- Showcase user testimonials to enhance the legitimacy of my website.
+
+#### As a UX Designer I want to...
+
+- Track user behaviour to continue to enhance the user experience.
+- Provide a website which is attractive, yet can easily be modified as per the travel companies request.
+- Ensure the functionality of the website provides the results required by the user.
+- Provide a means for the user to contact the travel company.
+
+#### As a User I want to...
+
+- Find a variety of accomodation/attractions within a desired location on one website.
+- Be able to easily contact the travel company with any issues or enquiries I might have.
+- Be provided with the contact details for any accomodation/attractions searched for so I can contact them.
+- Be provided with the address details for any accomodation/attractions searched for so I can visit them.
+- Find accomodation/attractions that I may not have found without directly knowing the name of the place I'm searching for.
+- Find accomodation/attractions which I would ordinarily only have found through exstensive Google searches.
+
+#### As a Customer(owner of accomodation/attraction) I want to...
+
+- Increase the number of visitors to my accomodation/attraction.
+- Increase tourist numbers to drive revenue in the area I want to promote.
+- Have another means for potential visitors to find my accomodation/attraction other than via exstensive search engines.
+- Allow me to promote my accomodation/attraction without having to attempt to move myself higher up search engine results.
+
+### Design
+
+#### Colours
+
+- #FAED26 Yellow
+- #FFFFFF White
+- #09191D Dark Blue
+
+The website [Coolors](https://coolors.co/) was used to find an attractive colour scheme which compliments Scandinavia & Iceland.
+The dark blue compliments the background image used but also contrasts against the white & yellow which helps the text to pop out against the
+background. The colours are clean & simple much like Scandinavian design whilst also mimicking the beautiful starry nights the area
+is well known for. 
+
+#### Fonts
+
+- Fjalla One
+- Josefin Sans
+
+Both fonts were found on the site [Google Fonts](https://fonts.google.com/). They were chosen due to the simple & clean look they have,
+which compliments the colour scheme. Josefin Sans was used for the majority of the body text whereas the Fjalla One  was used for the heading 
+to give it extra pop. It was also designed by a Swede to further enhance the nordic style design.
+
+### Wireframes
+
+- All Wireframes were created using Balsamiq 3 software.
+
+- [Home Page](https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/mockups/Home%20Page.png).
+
+- [Menu](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Menu%20Bar.png).
+
+- [Testimonials Page](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Testimonials%20Page.png).
+
+- [Contacts Page](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Contacts%20Page.png).
+
+## Features/Functionality
+
+### Elements Present On Each Page
+
+#### Navigation Bar 
+
+- The Navbar-brand is used as a link to access the pop-up overlay menu which slides in from the left.
+- Due to the size of the pages the navbar is not fixed. Allows for easy navigation of the site.
+
+#### Footer 
+
+- Fixed to the bottom of the page this gives a brief description on how to use the site.
+- Provides links to the relevant social media sites. 
+- For now generic social media sites are used.
+
+#### Background Image 
+
+- A background image is used as the background on each page. 
+- The navbar & footer given transparent properties to allow for a fullscreen image.
+
+### Other Elements
+
+#### Contact Form 
+
+- A modal contact form is used on the contacts page.
+- Utilises [E-mail JS](https://www.emailjs.com/) javascript to allow e-mailintegration to the desired e-mail address. 
+- Allows users to easily get in touch with the travel company.
+
+#### Testimonials Section 
+
+- Has images of three users who've given glowing reviews. 
+- The images can be clicked to reveal the testimonial.
+
+### Features Left To Implement
+
+#### Country Search Filters
+
+- Dependent on user feedback a search filter for each country can be added to the search filter.
+
+#### FAQ Section
+
+- Will replace the about element shown in the footer. 
+- Give further instructions into how to use site & other information users may need.
+
+#### Flight Search 
+
+- Allow users to search for flights to the selected destination.
+- Will then link to the chosen flight provider. 
+
+#### Featured Accomodation/Attraction
+
+- Showcase a different venue each week/month.
+- Provide detailed information on the venue along with user testimonials.
+
+#### Further Languages
+
+- Add a language choice option to cater to users from various countries.
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+
+### Libraries
+
+- Bootstrap
+- JQuery & Popper
+- FontAwesome
+- Google Fonts
+
+### Tools
+
+- Github/Gitpod - Used to create & deploy website.
+- Google Maps API - Javascript functionality.
+- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
+- Balsamiq 3 Mockups
+- Google Chrome Dev Tools 
+
+## Testing
+
+- [Click Here For Testing File](https://github.com/JSudron/Nordic-Discover-Project/blob/master/testing/testing.md)
+
+## Deployment
+
+### Hosting On GitHub
+
+- Log into GitHub.
+- Go to settings and scroll down to GitHub Pages section.
+- Select as a source master branch.
+- The page is now automatically refreshed and the project is deployed.
+- To access the project scroll down again to GitHub Pages section and click on the provided link.
+- Link also at top of this Readme file.
+
+### How To Run This Project Locally
+
+- Go to [Nordic Discovery](https://github.com/JSudron/Nordic-Discover-Project) repository page.
+- Click on "Clone or download" green button.
+- Copy the URL to the repository.
+- Open the terminal in your local IDE.
+- Choose the working directory where you would like to have the cloned repository.
+- Type git clone, and add the URL you copied from Github: git clone https://github.com/JSudron/Nordic-Discover-Project.git.
+- Press Enter and your local clone will be created.
+
+## Credits
+
+### Content
+
+All original content.
+
+### Media
+
+#### Images
+
+- Background image from [Pexels](https://www.pexels.com/photo/photo-of-starry-night-1421903/).
+- Testimonial images were taken from Facebook friend whom consented to their use. 
+
+#### Fonts
+
+- Fonts from [Google Fonts](https://fonts.google.com/).
+
+### Acknowledgements
+
+#### Inspiration
+
+- Parts of code were learnt from various sites, which was then amended by myself to obtain the look & feel I was after.
+- The [Student Projects](https://codeinstitute.net/student-projects/) section on the Code Institute site was used to look for inspiration. 
+- Primarily the [Ben Hasselgren](https://benhasselgren.github.io/ifd-milestone-project-pages/) project was used as a base idea for the website.
+- [Awwwards]https://www.awwwards.com/) was used to look at a variety of sites for design inspiration.
+- Colour scheme from [Coolors](https://coolors.co/).
+
+#### Navbar 
+
+- Code learnt from Code Institute tutorials.   
+- The slide menu pop-up overlay javascript was learnt from [W3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp).
+
+#### Search Filters
+
+- Code learnt from Code Institute tutorials. 
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+- Code adapted up from [Get Bootstrap](https://getbootstrap.com/).
+
+#### Map - Javascript
+
+- Predominantly code taken from [Google Maps](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
+- Map style adapted from [Snazzy Maps](https://snazzymaps.com/style/25/blue-water).
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+- Code adapted up from [W3schools](https://www.w3schools.com/graphics/google_maps_events.asp)
+
+#### Results
+
+- Code learnt from Code Institute tutorials.
+- Code adapted up from [Stack Overflow](https://stackoverflow.com/).
+
+#### Contact Section
+
+- Code learnt from Code Institute tutorials.
+- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
+
+#### Testimonial Section
+
+- Code learnt from Code Institute tutorials.
+
+#### Footer
+
+- Code learnt from Code Institute tutorials.
+
+## Disclaimer
+
+### This is for educational use only
