@@ -1,8 +1,8 @@
 # Happy Hollidays - Project Two: Interactive Frontend Development
 
-![Screenshot](https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/images/Multi_Device_Website_Mockupr.png?raw=true)
+![Screenshot]()
 
-A live demo can be found [here](https://jsudron.github.io/Nordic-Discovery-Project/).
+A live demo can be found [here]().
 
 ## Introduction - Project Purpose
 
