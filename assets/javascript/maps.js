@@ -1,19 +1,13 @@
-// This document allows the user to find various locations in a given city.
-// It then displays markers for all the places returned, with on-click details for each set of filter parameters.
-// Attempted to use const or let rather than var but this resulted in the map not appearing on the site.
-
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
-
-
 var countries = {
-    'za': {                     //For centering the map as opposed to searching.
+  'za': {                     //For centering the map as opposed to searching.
         center: { lat: -30.4, lng:  24.6 },
         zoom: 6
-    }
+  }
 };
 
 //Resets the map and input fields.
@@ -28,16 +22,16 @@ function reset() {
     map.setZoom(countries.za.zoom);
     map.setCenter(countries.za.center);
     place = "";
-}
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), { 
-        zoom: countries.za.zoom,
-        center: countries.za.center,
-        mapTypeControl: true,
-        panControl: true,
-        streetViewControl: true,
-        styles: [ //Map style used from https://snazzymaps.com/style/74813/africa
+  map = new google.maps.Map(document.getElementById('map'), {
+    zoom: (countries.za).zoom,
+    center: (countries.za).center,
+    mapTypeControl: false,
+    panControl: false,
+    zoomControl: false,
+    streetViewControl: false
+    styles: [ //Map style used from https://snazzymaps.com/style/74813/africa
             
     {
         "featureType": "all",
@@ -127,15 +121,13 @@ function initMap() {
         ]
     }
 ]
-    });
+  });
 
+  infoWindow = new google.maps.InfoWindow({
+    content: document.getElementById('info-content')
+  });
 
-    infoWindow = new google.maps.InfoWindow({
-        content: document.getElementById('info-content')
-    });
-
-
-    // Create the autocomplete object and associate it with the UI input control place type "cities".
+  // Create the autocomplete object and associate it with the UI input control place type "cities".
 
     autocomplete = new google.maps.places.Autocomplete(
         /** @type {!HTMLInputElement} */
@@ -370,6 +362,7 @@ function clearResults() {
 }
 
 
+
 // Get the place details for each search result. Show the information in an info window, anchored on the marker for the place that the user selected.
 
 function showInfoWindow() {
@@ -383,60 +376,4 @@ function showInfoWindow() {
             buildIWContent(place);
 
         });
-}
-
-// Load the place information into the HTML elements used by the info window.
-
-function buildIWContent(place) {
-
-    document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
-        'src="' + place.icon + '"/>';
-    document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
-        '">' + place.name + '</a></b>';
-    document.getElementById('iw-address').textContent = place.vicinity;
-
-    if (place.formatted_phone_number) {
-        document.getElementById('iw-phone-row').style.display = '';
-        document.getElementById('iw-phone').textContent =
-            place.formatted_phone_number;
-    }
-    else {
-        document.getElementById('iw-phone-row').style.display = 'none';
-    }
-
-
-    // Assign a five-star rating to the place to indicate the rating the place has earned, and a white star ('&#10025;')
-    
-    if (place.rating) {
-        var ratingHtml = '';
-        for (var i = 0; i < 5; i++) {
-            if (place.rating < (i + 0.5)) {
-                ratingHtml += '&#10025;';
-            }
-            else {
-                ratingHtml += '&#10029;';
-            }
-            document.getElementById('iw-rating-row').style.display = '';
-            document.getElementById('iw-rating').innerHTML = ratingHtml;
-        }
-    }
-    else {
-        document.getElementById('iw-rating-row').style.display = 'none';
-    }
-
-    // The regexp isolates the first part of the URL (domain plus subdomain) to give a short URL for displaying in the info window.
-
-    if (place.website) {
-        var fullUrl = place.website;
-        var website = hostnameRegexp.exec(place.website);
-        if (website === null) {
-            website = 'http://' + place.website + '/';
-            fullUrl = website;
-        }
-        document.getElementById('iw-website-row').style.display = '';
-        document.getElementById('iw-website').textContent = website;
-    }
-    else {
-        document.getElementById('iw-website-row').style.display = 'none';
-    }
 }
