@@ -19,7 +19,7 @@ To allow the user to find locations for thier holliday in South Africa.
 
 - Users whom speak English as currently this is the only language catered for.
 - Holidaymakers of all ages looking for potential holiday destinations.
-- Holidaymakers whom have already have a holiday booked to Scandinavia or Iceland.
+- Holidaymakers whom have already have a holiday booked to South Africa.
 - Students between 18 & 28 looking for somewhere to go on a gap year.
 
 #### Customer Goals

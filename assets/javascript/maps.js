@@ -25,8 +25,8 @@ function reset() {
     $("#autocomplete").val("");
     $('#results-heading').html("");
     $('#hr').hide();
-    map.setZoom(countries.uk.zoom);
-    map.setCenter(countries.uk.center);
+    map.setZoom(countries.za.zoom);
+    map.setCenter(countries.za.center);
     place = "";
 }
 
@@ -34,10 +34,11 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), { 
         zoom: countries.za.zoom,
         center: countries.za.center,
-        mapTypeControl: false,
-        panControl: false,
-        streetViewControl: false,
+        mapTypeControl: true,
+        panControl: true,
+        streetViewControl: true,
         styles: [ //Map style used from https://snazzymaps.com/style/74813/africa
+            
     {
         "featureType": "all",
         "elementType": "geometry",
@@ -140,7 +141,7 @@ function initMap() {
         /** @type {!HTMLInputElement} */
         (
             document.getElementById('autocomplete')), {
-        types: ['(cities)'],
+        type: ['(cities)'],
         componentRestrictions: { country: ['za'] }
     });
     places = new google.maps.places.PlacesService(map);
@@ -165,7 +166,7 @@ function onPlaceChanged() {
             map.setZoom(13);
             var search = {
                 bounds: map.getBounds(),
-                types: ['lodging']
+                type: ['lodging']
             };
             doNearbySearch(search);
         }
@@ -179,7 +180,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['campground']
+                type: ['campground']
             };
             doNearbySearch(search);
         }
@@ -193,7 +194,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
+                type: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
             };
             doNearbySearch(search);
         }
@@ -207,7 +208,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['park']
+                type: ['park']
             };
             doNearbySearch(search);
         }
@@ -221,7 +222,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['stadium']
+                type: ['stadium']
             };
             doNearbySearch(search);
         }
@@ -235,7 +236,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['cafe', 'restaurant', 'bakery']
+                type: ['cafe', 'restaurant', 'bakery']
             };
             doNearbySearch(search);
         }
@@ -249,7 +250,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['bar']
+                type: ['bar']
             };
             doNearbySearch(search);
         }
@@ -263,7 +264,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['night_club']
+                type: ['night_club']
             };
             doNearbySearch(search);
         }
@@ -277,7 +278,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                types: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
+                type: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
             };
             doNearbySearch(search);
         }
