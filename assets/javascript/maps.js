@@ -1,13 +1,20 @@
+// This document allows the user to find various locations in a given city.
+// It then displays markers for all the places returned, with on-click details for each set of filter parameters.
+// Attempted to use const or let rather than var but this resulted in the map not appearing on the site.
+
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
+
+
 var countries = {
-  'za': {                     //For centering the map as opposed to searching.
+    'za': {                     //For centering the map as opposed to searching.
         center: { lat: -30.4, lng:  24.6 },
         zoom: 6
-  }
+       
+    }
 };
 
 //Resets the map and input fields.
@@ -22,119 +29,111 @@ function reset() {
     map.setZoom(countries.za.zoom);
     map.setCenter(countries.za.center);
     place = "";
+}
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: (countries.za).zoom,
-    center: (countries.za).center,
-    mapTypeControl: false,
-    panControl: false,
-    zoomControl: false,
-    streetViewControl: false
-    styles: [ //Map style used from https://snazzymaps.com/style/74813/africa
-            
-    {
-        "featureType": "all",
-        "elementType": "geometry",
-        "stylers": [
+    map = new google.maps.Map(document.getElementById('map'), { 
+        zoom: countries.za.zoom,
+        center: countries.za.center,
+        mapTypeControl: false,
+        panControl: false,
+        streetViewControl: false,
+        styles: [                                       // Stylising of the map, edited from https://snazzymaps.com/style/25/blue-water
             {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#444444"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#f2f2f2"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
+                "featureType": "administrative",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#444444"
+                    }
+                ]
             },
             {
-                "lightness": 45
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#46bcec"
+                "featureType": "landscape",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#f2f2f2"
+                    }
+                ]
             },
             {
-                "visibility": "on"
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": -100
+                    },
+                    {
+                        "lightness": 45
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "simplified"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "color": "#09191D"
+                    },
+                    {
+                        "visibility": "on"
+                    }
+                ]
             }
         ]
-    }
-]
-  });
+    });
 
-  infoWindow = new google.maps.InfoWindow({
-    content: document.getElementById('info-content')
-  });
 
-  // Create the autocomplete object and associate it with the UI input control place type "cities".
+    infoWindow = new google.maps.InfoWindow({
+        content: document.getElementById('info-content')
+    });
+
+
+    // Create the autocomplete object and associate it with the UI input control place type "cities".
 
     autocomplete = new google.maps.places.Autocomplete(
         /** @type {!HTMLInputElement} */
         (
             document.getElementById('autocomplete')), {
-        type: ['(cities)'],
-        componentRestrictions: { country: ['za'] }
+        types: ['(cities)'],
+        componentRestrictions: { country: ["za"] }
     });
     places = new google.maps.places.PlacesService(map);
 
@@ -158,7 +157,7 @@ function onPlaceChanged() {
             map.setZoom(13);
             var search = {
                 bounds: map.getBounds(),
-                type: ['lodging']
+                types: ['lodging']
             };
             doNearbySearch(search);
         }
@@ -172,7 +171,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['campground']
+                types: ['campground']
             };
             doNearbySearch(search);
         }
@@ -186,7 +185,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
+                types: ['art_gallery', 'aquarium', 'amusement_park', 'museum', 'tourist_attraction', 'zoo']
             };
             doNearbySearch(search);
         }
@@ -200,7 +199,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['park']
+                types: ['park']
             };
             doNearbySearch(search);
         }
@@ -214,7 +213,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['stadium']
+                types: ['stadium']
             };
             doNearbySearch(search);
         }
@@ -228,7 +227,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['cafe', 'restaurant', 'bakery']
+                types: ['cafe', 'restaurant', 'bakery']
             };
             doNearbySearch(search);
         }
@@ -242,7 +241,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['bar']
+                types: ['bar']
             };
             doNearbySearch(search);
         }
@@ -256,7 +255,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['night_club']
+                types: ['night_club']
             };
             doNearbySearch(search);
         }
@@ -270,7 +269,7 @@ function onPlaceChanged() {
             map.setZoom(13);
                 search = {
                 bounds: map.getBounds(),
-                type: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
+                types: ['shopping_mall', 'store', 'electronics_store', 'clothing_store', 'shoe_store', 'book_store']
             };
             doNearbySearch(search);
         }
@@ -352,6 +351,18 @@ function addResult(result, i) {
 
     };
 
+    var iconTd = document.createElement('td');
+    var nameTd = document.createElement('td');
+    var icon = document.createElement('img');
+    icon.src = markerIcon;
+    icon.setAttribute('class', 'placeIcon');
+    icon.setAttribute('className', 'placeIcon');
+    var name = document.createTextNode(result.name);
+    iconTd.appendChild(icon);
+    nameTd.appendChild(name);
+    tr.appendChild(iconTd);
+    tr.appendChild(nameTd);
+    results.appendChild(tr);
 }
 
 function clearResults() {
@@ -360,7 +371,6 @@ function clearResults() {
         results.removeChild(results.childNodes[0]);
     }
 }
-
 
 
 // Get the place details for each search result. Show the information in an info window, anchored on the marker for the place that the user selected.
@@ -376,4 +386,60 @@ function showInfoWindow() {
             buildIWContent(place);
 
         });
+}
+
+// Load the place information into the HTML elements used by the info window.
+
+function buildIWContent(place) {
+
+    document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
+        'src="' + place.icon + '"/>';
+    document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
+        '">' + place.name + '</a></b>';
+    document.getElementById('iw-address').textContent = place.vicinity;
+
+    if (place.formatted_phone_number) {
+        document.getElementById('iw-phone-row').style.display = '';
+        document.getElementById('iw-phone').textContent =
+            place.formatted_phone_number;
+    }
+    else {
+        document.getElementById('iw-phone-row').style.display = 'none';
+    }
+
+
+    // Assign a five-star rating to the place to indicate the rating the place has earned, and a white star ('&#10025;')
+    
+    if (place.rating) {
+        var ratingHtml = '';
+        for (var i = 0; i < 5; i++) {
+            if (place.rating < (i + 0.5)) {
+                ratingHtml += '&#10025;';
+            }
+            else {
+                ratingHtml += '&#10029;';
+            }
+            document.getElementById('iw-rating-row').style.display = '';
+            document.getElementById('iw-rating').innerHTML = ratingHtml;
+        }
+    }
+    else {
+        document.getElementById('iw-rating-row').style.display = 'none';
+    }
+
+    // The regexp isolates the first part of the URL (domain plus subdomain) to give a short URL for displaying in the info window.
+
+    if (place.website) {
+        var fullUrl = place.website;
+        var website = hostnameRegexp.exec(place.website);
+        if (website === null) {
+            website = 'http://' + place.website + '/';
+            fullUrl = website;
+        }
+        document.getElementById('iw-website-row').style.display = '';
+        document.getElementById('iw-website').textContent = website;
+    }
+    else {
+        document.getElementById('iw-website-row').style.display = 'none';
+    }
 }
