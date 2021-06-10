@@ -2,7 +2,7 @@
 
 ![Screenshot]()
 
-A live demo can be found [here]().
+A live demo can be found [here](https://orihillairetdev.github.io/Milestone-project-2/).
 
 ## Introduction - Project Purpose
 
