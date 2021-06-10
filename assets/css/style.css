@@ -172,6 +172,10 @@ border-top: none;
   animation-fill-mode: forwards;
 }
 
+.contacttext{
+    text-align: center;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}

@@ -13,7 +13,7 @@ in the country.
  
 ### Goals
 
-To allow the user to find locations for thier holliday in South Africa.
+To allow the user to find locations for their holliday in South Africa.
 
 #### Target Audience
 
@@ -26,7 +26,7 @@ To allow the user to find locations for thier holliday in South Africa.
 
 - Have a fully proficient & intuitive website.
 - Reach a variety of new customers.
-- Gain advertising/sponsorship from accomodation/attractions found on the site.
+- help people find locations to visit in near where they are staying
 
 ### User Stories
 
@@ -35,10 +35,10 @@ To allow the user to find locations for thier holliday in South Africa.
 - Have an attractive & fast website which will keep users engaged.
 - Provide a pleasant user experience so users continue to visit the site.
 - Enable users to easily find a variety of accomodation/attractions within their desired location.
-- Help to increase turnover at attractions so they'll actively advertise Nordic Discovery, e.g. via their own website.
+- Help to increase turnover at attractions so they'll actively advertise Happy Hollidays, e.g. via their own website.
 - At some point in the future drive further revenue via sponsorship & advertising from searched locations & accomodation/attractions.
 - Allow site visitors to contact me should they have any enquiries.
-- Showcase user testimonials to enhance the legitimacy of my website.
+
 
 #### As a UX Designer I want to...
 
@@ -50,10 +50,7 @@ To allow the user to find locations for thier holliday in South Africa.
 #### As a User I want to...
 
 - Find a variety of accomodation/attractions within a desired location on one website.
-- Be able to easily contact the travel company with any issues or enquiries I might have.
-- Be provided with the contact details for any accomodation/attractions searched for so I can contact them.
-- Be provided with the address details for any accomodation/attractions searched for so I can visit them.
-- Find accomodation/attractions that I may not have found without directly knowing the name of the place I'm searching for.
+- see whats in the city i am staying 
 - Find accomodation/attractions which I would ordinarily only have found through exstensive Google searches.
 
 #### As a Customer(owner of accomodation/attraction) I want to...
@@ -67,14 +64,11 @@ To allow the user to find locations for thier holliday in South Africa.
 
 #### Colours
 
-- #FAED26 Yellow
-- #FFFFFF White
-- #09191D Dark Blue
+- Orange
+- light Blue
+- Grey
 
-The website [Coolors](https://coolors.co/) was used to find an attractive colour scheme which compliments Scandinavia & Iceland.
-The dark blue compliments the background image used but also contrasts against the white & yellow which helps the text to pop out against the
-background. The colours are clean & simple much like Scandinavian design whilst also mimicking the beautiful starry nights the area
-is well known for. 
+using the image of South Africa as a base i chose colours that complemented the picture.
 
 #### Fonts
 
@@ -82,20 +76,19 @@ is well known for.
 - Josefin Sans
 
 Both fonts were found on the site [Google Fonts](https://fonts.google.com/). They were chosen due to the simple & clean look they have,
-which compliments the colour scheme. Josefin Sans was used for the majority of the body text whereas the Fjalla One  was used for the heading 
-to give it extra pop. It was also designed by a Swede to further enhance the nordic style design.
+which compliments the colour scheme. 
 
 ### Wireframes
 
 - All Wireframes were created using Balsamiq 3 software.
 
-- [Home Page](https://github.com/JSudron/Nordic-Discover-Project/blob/master/assets/mockups/Home%20Page.png).
+- [Home Page]().
 
-- [Menu](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Menu%20Bar.png).
+- [Menu]().
 
-- [Testimonials Page](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Testimonials%20Page.png).
+- [Testimonials Page]().
 
-- [Contacts Page](https://github.com/JSudron/Nordic-Discover-Project/blob/assets/mockups/Contacts%20Page.png).
+- [Contacts Page]().
 
 ## Features/Functionality
 
@@ -106,50 +99,37 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 - The Navbar-brand is used as a link to access the pop-up overlay menu which slides in from the left.
 - Due to the size of the pages the navbar is not fixed. Allows for easy navigation of the site.
 
-#### Footer 
-
-- Fixed to the bottom of the page this gives a brief description on how to use the site.
-- Provides links to the relevant social media sites. 
-- For now generic social media sites are used.
-
 #### Background Image 
 
 - A background image is used as the background on each page. 
-- The navbar & footer given transparent properties to allow for a fullscreen image.
+
 
 ### Other Elements
 
+#### Gallery
+
+- A simple gallery that showcases images of holiday destiations
+
 #### Contact Form 
 
-- A modal contact form is used on the contacts page.
-- Utilises [E-mail JS](https://www.emailjs.com/) javascript to allow e-mailintegration to the desired e-mail address. 
-- Allows users to easily get in touch with the travel company.
+- A page for contacting the customer and in future a list of buisness contacts.
 
-#### Testimonials Section 
-
-- Has images of three users who've given glowing reviews. 
-- The images can be clicked to reveal the testimonial.
 
 ### Features Left To Implement
 
-#### Country Search Filters
+#### Gallery links
 
-- Dependent on user feedback a search filter for each country can be added to the search filter.
+- Links on all the images in the gallery that lead to the respective websites
 
 #### FAQ Section
 
-- Will replace the about element shown in the footer. 
-- Give further instructions into how to use site & other information users may need.
+- Will add a new tab that contains all of the questions and details on the website
 
 #### Flight Search 
 
 - Allow users to search for flights to the selected destination.
 - Will then link to the chosen flight provider. 
 
-#### Featured Accomodation/Attraction
-
-- Showcase a different venue each week/month.
-- Provide detailed information on the venue along with user testimonials.
 
 #### Further Languages
 
@@ -174,13 +154,12 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 - Github/Gitpod - Used to create & deploy website.
 - Google Maps API - Javascript functionality.
-- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
-- Balsamiq 3 Mockups
+- Figma (wireframes)
 - Google Chrome Dev Tools 
 
 ## Testing
 
-- [Click Here For Testing File](https://github.com/JSudron/Nordic-Discover-Project/blob/master/testing/testing.md)
+- [Click Here For Testing File]()
 
 ## Deployment
 
@@ -195,7 +174,7 @@ to give it extra pop. It was also designed by a Swede to further enhance the nor
 
 ### How To Run This Project Locally
 
-- Go to [Nordic Discovery](https://github.com/JSudron/Nordic-Discover-Project) repository page.
+- Go to [Healing Hollidays](https://github.com/OriHillairetdev/Milestone-project-2) repository page.
 - Click on "Clone or download" green button.
 - Copy the URL to the repository.
 - Open the terminal in your local IDE.
@@ -213,8 +192,8 @@ All original content.
 
 #### Images
 
-- Background image from [Pexels](https://www.pexels.com/photo/photo-of-starry-night-1421903/).
-- Testimonial images were taken from Facebook friend whom consented to their use. 
+- Background image from [Google images]
+ 
 
 #### Fonts
 
@@ -226,8 +205,6 @@ All original content.
 
 - Parts of code were learnt from various sites, which was then amended by myself to obtain the look & feel I was after.
 - The [Student Projects](https://codeinstitute.net/student-projects/) section on the Code Institute site was used to look for inspiration. 
-- Primarily the [Ben Hasselgren](https://benhasselgren.github.io/ifd-milestone-project-pages/) project was used as a base idea for the website.
-- [Awwwards]https://www.awwwards.com/) was used to look at a variety of sites for design inspiration.
 - Colour scheme from [Coolors](https://coolors.co/).
 
 #### Navbar 
@@ -253,18 +230,7 @@ All original content.
 - Code learnt from Code Institute tutorials.
 - Code adapted up from [Stack Overflow](https://stackoverflow.com/).
 
-#### Contact Section
 
-- Code learnt from Code Institute tutorials.
-- [E-mail JS](https://www.emailjs.com/) - Javascript functionality.
-
-#### Testimonial Section
-
-- Code learnt from Code Institute tutorials.
-
-#### Footer
-
-- Code learnt from Code Institute tutorials.
 
 ## Disclaimer
 
