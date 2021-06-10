@@ -82,13 +82,9 @@ which compliments the colour scheme.
 
 - All Wireframes were created using Balsamiq 3 software.
 
-- [Home Page]().
+- [wireframes](https://github.com/OriHillairetdev/Milestone-project-2/blob/74f91d9bbec843b3e65cdec8ed50e63c59e975ed/assets/images/wireframes).
 
-- [Menu]().
-
-- [Testimonials Page]().
-
-- [Contacts Page]().
+- 
 
 ## Features/Functionality
 
