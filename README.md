@@ -175,7 +175,7 @@ which compliments the colour scheme.
 - Copy the URL to the repository.
 - Open the terminal in your local IDE.
 - Choose the working directory where you would like to have the cloned repository.
-- Type git clone, and add the URL you copied from Github: git clone https://github.com/JSudron/Nordic-Discover-Project.git.
+- Type git clone, and add the URL you copied from Github: git clone https://github.com/OriHillairetdev/Milestone-project-2.git.
 - Press Enter and your local clone will be created.
 
 ## Credits
