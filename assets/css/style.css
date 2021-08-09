@@ -76,6 +76,21 @@ body {
 }
 
 /*Info box styling*/
+table {
+  font-size: 15px;
+}
+
+#listing {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+}
+
+#resultsTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 .iw_table_row {
   height: 18px;
 }
@@ -83,6 +98,7 @@ body {
 .iw_attribute_name {
   font-weight: bold;
   text-align: right;
+  
 }
 
 .iw_table_icon {
@@ -377,7 +393,7 @@ footer {
 } 
 
 .iw_table_row {
-    font-size: 0.6rem;
+    font-size: 1.5rem;
     font-family: 'Fjalla One', sans-serif;
     color: #09191D;
 }
