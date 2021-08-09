@@ -75,6 +75,20 @@ body {
   font-size: 15px;
 }
 
+/*Info box styling*/
+.iw_table_row {
+  height: 18px;
+}
+
+.iw_attribute_name {
+  font-weight: bold;
+  text-align: right;
+}
+
+.iw_table_icon {
+  text-align: right;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;

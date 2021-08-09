@@ -19,7 +19,7 @@ var countries = {
 function reset() {
  clearResults();
  clearMarkers();
- $('#country')[0].selectedIndex = 0;
+
  $("#autocomplete").val("");
  $('#results-heading').innerHTML("");
  map.setZoom(6);
@@ -60,9 +60,7 @@ function reset() {
  document.getElementById('foodRadio').addEventListener('change', onPlaceChanged); 
  document.getElementById('accomodationRadio').addEventListener('change', onPlaceChanged); 
  document.getElementById('touristRadio').addEventListener('change', onPlaceChanged);
- // Add a DOM event listener to react when the user selects a country.
- document.getElementById('country').addEventListener('change', setAutocompleteCountry); 
- document.getElementById('reset-button').addEventListener("click", setAutocompleteCountry);
+ 
 
 }
 
