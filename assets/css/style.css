@@ -21,16 +21,58 @@ body {
 /* Setting the defualt tabe to show at launch*/
 
 
+/* Map settings */
+.map-section {
+  border-bottom: 1px solid #d0d0d0;
+}
 
 #map {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    width: auto;
-    height: auto;
-    background: transparent;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
+  min-height: 500px !important;
+}
+
+.input-boxes {
+  width: 100%;
+  line-height: 50px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+#country {
+  height: 50px;
+}
+
+.find-header {
+  font-family: "Exo", "sans-serif";
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+#reset-button {
+  margin-bottom: 20px;
+  margin-top: 90px;
+}
+
+.filter-column {
+  height: 592px;
+  border-right: 1px solid #d0d0d0;
+
+}
+
+.radio-form {
+  margin-left: 10px;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+.radio-buttons {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-family: "Roboto", "sans-serif";
+  font-size: 15px;
 }
 
 /* Style the tab */

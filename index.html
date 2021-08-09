@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <lin
 </head>
 
 <body>
-    <header class="container-fluid navbar-section">
-        <nav class="navbar navbar-light bg-light nav">
-            <a id="nav-title" class="navbar-brand uppercase" href="#">
-                Holiday Planner
-            </a>
-        </nav>
-    </header>
+  <body class="background">
+    <h1>Happy Hollidays</h1>
+    <p>Welcome to South Africa an amazing country with tons to do and amazing sights to see.</p><!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Home')">Home</button> <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button> <button class="tablinks" onclick="openTab(event, 'Business')">Business</button>
+    </div><!-- Tab content -->
+    <!--Home Tab-->
+    <div id="Home" class="tabcontent">
     <section class="container-fluid map-section">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 filter-column">
@@ -28,31 +30,8 @@
                         <h3 class="section-heading uppercase">Filter</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 find-header">
-                        Country:
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <select class="input-boxes" id="country">
-                                <option value="all" selected>All</option>
-                                <option value="au">Australia</option>
-                                <option value="br">Brazil</option>
-                                <option value="ca">Canada</option>
-                                <option value="fr">France</option>
-                                <option value="de">Germany</option>
-                                <option value="mx">Mexico</option>
-                                <option value="nz">New Zealand</option>
-                                <option value="it">Italy</option>
-                                <option value="za">South Africa</option>
-                                <option value="es">Spain</option>
-                                <option value="pt">Portugal</option>
-                                <option value="us" >U.S.A.</option>
-                                <option value="uk">United Kingdom</option>
-                        </select>
-                    </div>
-                </div>
+               
+                
                 <div class="row">
                     <div id="findhotels" class="col-md-12 find-header">
                         City:
@@ -157,8 +136,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvC_t0H_5B7rboFdodoYnxT9zLEXmY4HQ&libraries=places&callback=initMap" async defer></script>
+    <script type="text/javascript" src="assets/javascript/maps.js"></script><!--Bootstrap & CSS stylesheet links-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpHF2o9d25iUs5-o2HdnEd5SIEFHYlmfI&amp;libraries=places&amp;callback=initMap" async defer></script>
 
 </body>
 
