@@ -21,7 +21,6 @@ function reset() {
  clearMarkers();
 
  $("#autocomplete").val("");
- $('#results-heading').innerHTML("");
  map.setZoom(6);
  map.setCenter(countries["za"].center);
  map.componentRestrictions = { 'country': ["za"] };
