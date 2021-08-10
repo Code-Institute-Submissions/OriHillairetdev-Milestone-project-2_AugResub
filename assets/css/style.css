@@ -184,7 +184,7 @@ input:focus::placeholder {
 /*-----------------------MAP */
 
 #map {
-    margin-top: 50px;
+    margin-top: 200px;
     margin-bottom: 20px;
     width: 100%;
     height: 75vh;
