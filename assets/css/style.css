@@ -52,11 +52,12 @@ body {
 
 #reset-button {
   margin-bottom: 20px;
-  margin-top: 90px;
+  margin-top: 10px;
+  text-align: left;
 }
 
 .filter-column {
-  height: 592px;
+  height: 300px;
   border-right: 1px solid #d0d0d0;
 
 }
@@ -89,6 +90,7 @@ table {
 #resultsTable {
   border-collapse: collapse;
   width: 100%;
+  
 }
 
 .iw_table_row {
@@ -344,7 +346,7 @@ table {
 }
 
 #results {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #results-heading {
