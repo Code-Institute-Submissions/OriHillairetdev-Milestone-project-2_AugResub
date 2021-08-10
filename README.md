@@ -1,6 +1,6 @@
 # Happy Hollidays - Project Two: Interactive Frontend Development
 
-![Screenshot](assets/images/wireframes/Newhappy holidays.png)
+![Screenshot](https://github.com/OriHillairetdev/Milestone-project-2/blob/master/assets/images/wireframes/Newhappy%20holidays.png)
 
 A live demo can be found [here](https://orihillairetdev.github.io/Milestone-project-2/).
 
