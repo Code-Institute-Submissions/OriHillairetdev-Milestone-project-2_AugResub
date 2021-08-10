@@ -38,6 +38,7 @@ function reset() {
     panControl: false,
     zoomControl: false,
     streetViewControl: true,
+    scrollwheel: false,
     componentRestrictions: countryRestrict
 
    });
