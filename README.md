@@ -7,8 +7,7 @@ A live demo can be found [here](https://orihillairetdev.github.io/Milestone-proj
 ## Introduction - Project Purpose
 
 For project two i chose the travel website project where i was tasked with creating a project that utilised Google maps i settled on a site
-that would allow users to find locations throughout towns and citys in South Africa while also being able to view images taken from major holliday locations
-in the country.
+that would allow users to find locations throughout towns and citys in South Africa 
 ## UX
  
 ### Goals
@@ -80,7 +79,7 @@ which compliments the colour scheme.
 
 ### Wireframes
 
-- All Wireframes were created using Balsamiq 3 software.
+- All Wireframes were created using FIGMA. the origonal scope of the website was too large and had uneccsercy additions that did nothing more than hamper the experience and as i fixed the errors and website i made major modifications so the end result differs from the origonal design 
 
 - [wireframes](https://github.com/OriHillairetdev/Milestone-project-2/blob/74f91d9bbec843b3e65cdec8ed50e63c59e975ed/assets/images/wireframes).
 
@@ -92,34 +91,20 @@ which compliments the colour scheme.
 
 #### Navigation Bar 
 
-- The Navbar-brand is used as a link to access the pop-up overlay menu which slides in from the left.
-- Due to the size of the pages the navbar is not fixed. Allows for easy navigation of the site.
+- No navigation bar is needed as the website was changed from the previous version to the mouch more streamline single webpage version it is now 
 
 #### Background Image 
 
-- A background image is used as the background on each page. 
+- A background image is a picture of Cape Town 
 
 
 ### Other Elements
 
-#### Gallery
-
-- A simple gallery that showcases images of holiday destiations
-
-#### Contact Form 
-
-- A page for contacting the customer and in future a list of buisness contacts.
 
 
-### Features Left To Implement
 
-#### Gallery links
+### Possible Features To Implement
 
-- Links on all the images in the gallery that lead to the respective websites
-
-#### FAQ Section
-
-- Will add a new tab that contains all of the questions and details on the website
 
 #### Flight Search 
 
@@ -202,11 +187,7 @@ All original content.
 - Parts of code were learnt from various sites, which was then amended by myself to obtain the look & feel I was after.
 - The [Student Projects](https://codeinstitute.net/student-projects/) section on the Code Institute site was used to look for inspiration. 
 - Colour scheme from [Coolors](https://coolors.co/).
-
-#### Navbar 
-
-- Code learnt from Code Institute tutorials.   
-- The slide menu pop-up overlay javascript was learnt from [W3schools](https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp).
+-Google maps Google places autcomplete page was used for insperation on how to tackle the project idea
 
 #### Search Filters
 
@@ -217,7 +198,6 @@ All original content.
 #### Map - Javascript
 
 - Predominantly code taken from [Google Maps](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch).
-- Map style adapted from [Snazzy Maps](https://snazzymaps.com/style/25/blue-water).
 - Code adapted up from [Stack Overflow](https://stackoverflow.com/).
 - Code adapted up from [W3schools](https://www.w3schools.com/graphics/google_maps_events.asp)
 
