@@ -13,29 +13,37 @@
     
 </head>
 
-<body>
-  <body class="background">
+
+<body class="background">
     <h1 <p class="text-center font-weight-bold text-uppercase">Happy Hollidays</h1>
-   <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'About')">About Us</button>
-      <button class="tablinks" onclick="openTab(event, 'Home')">Find Holliday Locations</button>
-      
-    </div><!-- Tab content -->
-
+        
         <!--About-->
-            <div id="About" class="tabcontent">
-                <h1>Happy Hollidays</h1>
-                <p>Happy Hollidays is a website designed for finding destination and their details in South Africa
-
-                    Just select the name of the city that you plan to visit and then select between Accomadation Tourist destinations and Restaurants
-                    then markers will be droped down on all of the ones in the area  
-                </p>
+            <div id="About" >
+                <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        
+                      </div>
+                      <div class="col-6">
+                        
+                        <p class="text-center d-flex justify-content-center " > is a website designed for finding destination and their details in South Africa
+                        Just select the name of the city that you plan to visit and then select between Accomadation Tourist destinations and Restaurants
+                        then markers will be droped down on all of the ones in the area.
+                        </p>
+                        <p class="text-center d-flex justify-content-center " >you can then click on each one and get information like rating contact details and address and if you 
+                            feel like it use google street view to have a look around  
+                            </p>
+                      </div>
+                      <div class="col">
+                       
+                      </div>
+                    </div>
+                      
             </div>
 
 
-    <!--Home Tab-->
-    <div id="Home" class="tabcontent">
+    <!--Maps and dearch function-->
+    <div id="Home"">
     <section class="container-fluid map-section">
         <div class="row">
             <div class="col-xs-12 col-sm-4 col-md-4 filter-column">
@@ -81,8 +89,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="container-fluid">
+     </section>
+     <section class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h3 id="results-heading" class="section-heading uppercase text-center "> </h3>
@@ -123,15 +131,40 @@
                 </table>
             </div>
         </div>
+    </div>    
     </section>
+    <footer>
+        <div id="About" >
+            <div class="container">
+                <div class="row">
+                  <div class="col">
+                    
+                  </div>
+                  <div class="col-6">
+                    
+                    <p class="text-center d-flex justify-content-center "> The contents of this website are for purely education
+                    </p>
+                    <p class="text-center d-flex justify-content-center "> Contact Me: OriDev87@gmail.com
+                    </p>
+                    <p class="text-center d-flex justify-content-center "> Orion Hillairet
+                    </p>
+                  </div>
+                  <div class="col">
+                   
+                  </div>
+                </div>
+                  
+        </div>
+       
+    </footer>
     
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/maps.js"></script><!--Bootstrap & CSS stylesheet links-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpHF2o9d25iUs5-o2HdnEd5
     SIEFHYlmfI&amp;libraries=places&amp;callback=initMap" async defer></script>
-    <script type="text/javascript" src="assets/javascript/tabs.js"></script>
-    <script type="text/javascript" src="assets/javascript/gallery.js"></script><!--JQuery, Popper.js & Bootstrap JS-->
+    
+    
 </body>
 
 </html>
